@@ -90,12 +90,13 @@ def main():
     y = 136
     kicker(d, (32, y), "TRADE  ·  LEAD STORY")
     y += 30
-    y = para(d, (32, y), "US proposes tariffs of up to 20% on EU, China and 12 more",
+    y = para(d, (32, y), "US proposes tariffs of up to 20% on 14 economies",
              font(SERIF_B, 40), INK, 600, 48)
     y += 4
     y = para(d, (32, y),
-             "China faces the top rate. The EU \u201cstrongly rejects the premise\u201d; "
-             "Beijing calls overcapacity \u201ca false issue\u201d.",
+             "Vietnam faces the proposed 20% rate; Cambodia and Indonesia 18%. "
+             "The EU \u201cstrongly rejects the premise\u201d; Beijing calls "
+             "overcapacity \u201ca false issue\u201d.",
              font(SANS, 22), MUTED, 600, 30)
     # Right-hand graphic: a big 20% with a rising arrow.
     gx0, gy0, gx1, gy1 = 668, 136, 992, 384
@@ -108,7 +109,7 @@ def main():
            fill=RED, width=7)
     d.polygon([(gx0 + 290, gy1 - 128), (gx0 + 262, gy1 - 128),
                (gx0 + 290, gy1 - 100)], fill=RED)
-    d.text((gx0 + 24, gy1 - 44), "EU  ·  China  ·  12 more countries",
+    d.text((gx0 + 24, gy1 - 44), "14 economies  ·  up to 20%",
            font=font(SANS, 19), fill=INK)
 
     # ---- Second row: markets + space ------------------------------------
@@ -169,8 +170,8 @@ def main():
     d.text((32, y), "ALSO TODAY", font=font(SANS_B, 20), fill=RED)
     y += 30
     y = para(d, (32, y),
-             "EU proposes a \u20ac500bn fund for quantum tech  \u00b7  "
-             "Zelensky: Ukraine seeks \u20ac115bn in aid for 2027",
+             "EU proposes a \u20ac50bn quantum fund  \u00b7  "
+             "Zelensky: Ukraine seeks \u20ac115bn aid for 2027",
              font(SANS, 20), INK, 960, 28)
     y = para(d, (32, y + 2),
              "Netanyahu graft charges face a rethink  \u00b7  "
